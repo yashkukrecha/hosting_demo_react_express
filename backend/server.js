@@ -3,7 +3,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;  // Use the PORT environment variable, default to 5000 if not set.
+const PORT = 4000;
 
 // Middleware to enable CORS
 app.use(cors());
@@ -14,5 +14,5 @@ app.get('/api/message', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });

@@ -9,7 +9,7 @@ const PORT = 4000;
 app.use(cors());
 
 // Sample endpoint
-app.get('/api/message', (req, res) => {
+app.get('/message', (req, res) => {
     res.json({ message: 'Hello from the server!' });
 });
 

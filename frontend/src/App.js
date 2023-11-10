@@ -8,7 +8,7 @@ function App() {
   const [fetchStatus, setFetchStatus] = useState('Preparing to fetch data...');
   const [fullApiURL, setFullApiURL] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
+  // testing
   useEffect(() => {
     const backendURL = "http://localhost:4000";
 
